@@ -1,4 +1,5 @@
-FROM sdhibit/rpi-raspbian
+FROM jsurf/rpi-raspbian:latest
+RUN [ "cross-build-start" ]
 RUN mkdir -p /capture_and_server
 RUN mkdir -p /lib
 RUN apt-get update && apt-get install -y \
