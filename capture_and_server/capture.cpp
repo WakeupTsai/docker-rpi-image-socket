@@ -25,7 +25,7 @@ int main( void )
     fstream fp;
 
     while(1){
-	fp.open(filename, ios::out|ios::app);
+	fp.open(filename, ios::out|ios::trunc);
 
     	time_t     now = time(0);
     	struct tm  tstruct;
